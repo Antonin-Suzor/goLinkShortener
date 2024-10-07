@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts/myaccount.js" defer async></script>
+    <title>My Account - LinkShortener</title>
+</head>
+<body>
+    <h2>My Account: <span id="id">{{.acc.Id}}</span></h2>
+    <p>Congratulations, you have just logged in !</p>
+    <p>On this page, you will  will be able to register new shortened links or edit existing ones.</p>
+    <p>You may <a href="/login">log out here</a>.</p>
+    <br>
+    Alias: <input type="text" id="newLinkAlias"> URL: <input type="text" id="newLinkUrl"> <button id="addLink" onclick="addLink()">Add Link</button>
+    <ul id="linksList">
+    </ul>
+</body>
+</html>
